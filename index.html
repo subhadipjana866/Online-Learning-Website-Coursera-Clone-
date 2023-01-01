@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursera</title>
+    <script src="https://kit.fontawesome.com/27eb6ba5ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="nav flex-center">
+        <div class="menu-logo" id="menu-logo" onclick="menuVisible()"><i class="fa-solid fa-bars fa-2x"></i></div>
+        <div class="menu-page" id="menu-page">
+            <div class="cross">
+                <img src="./images/logo.svg" alt="" id="cross" >
+                <i class="fa-solid fa-xmark fa-2x" onclick="menuHidden()"></i>
+            </div>
+            <div class="links">
+                <div class="bar"><a href="">For Enterprise</a></div>
+                <div class="bar"><a href="">For Universities</a></div>
+                <div class="bar"><a href="">Online Degrees</a></div>
+                <div class="bar"><a href="">Earn Certificate</a></div>
+                <div class="hr"></div>
+                <h1>Goals</h1>
+                <div class="bar"><a href="">Take a Free Course</a><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="bar"><a href="">Earn a Degree</a><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="bar"><a href="">Earn a Certificate</a><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="bar"><a href="">Advance your Career</a><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="bar"></div>
+                <div class="hr"></div>
+                <h1>Subjects</h1>
+                <div class="bar"><a href="">Data Science</a><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="bar"><a href="">Business</a><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="bar"><a href="">Computer Sciece</a><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="bar"><a href="">More</a><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div class="butt">
+                <button class="st">Join for Free</button>
+                <button class="nd">Try Coursera for Business</button>
+            </div>
+        </div>
+        <div class="page " id="page">
+            <div class="search-page">
+                <input type="text" placeholder="What do you want to learn?">
+                <i class="fa-solid fa-magnifying-glass fa-inverse"></i>
+            </div>
+            <a href="#" onclick="searchClose()">Cancel</a>
+        </div>
+        
+        <div class="left-section flex-center">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="">
+            </div>
+            <div class="button" id="explore"  onmouseover="exploreOn()" onmouseout="exploreOff()">
+                <button class="btn" >Explore <i class="fa-solid fa-chevron-down"></i></button>
+                <div id="explore-card" onmouseover="exploreOn()" onmouseout="exploreOff()">
+                    <h2>Goals</h2>
+                    <div class="extems">
+                        <h1>Take a free Course</h1>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="extems">
+                        <h1>Earn a Degree</h1>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="extems">
+                        <h1>Earn a Certificate</h1>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="extems">
+                        <h1>Advance your career</h1>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="extems">
+                        <h1>Find a ne career</h1>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <h2>Subjects</h2>
+                    <div class="extems">
+                        <h1>Data Science</h1>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="extems">
+                        <h1>Business</h1>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="extems">
+                        <h1>Computer Science</h1>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="extems">
+                        <h1>Information Technology</h1>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="extems">
+                        <h1>Language Learning</h1>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="extems">
+                        <h1>Health</h1>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="extems">
+                        <h1>Personal Development</h1>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="extems">
+                        <h1>Physical Science and Enigineering</h1>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="extems">
+                        <h1>Social Sciences</h1>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="extems">
+                        <h1>Arts and Humanities</h1>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="extems">
+                        <h1>Math and Logic</h1>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="button">
+                        <button class="btn">Browse all Subjects</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" placeholder="What do you want to learn?">
+                <i class="fa-solid fa-magnifying-glass fa-inverse"></i>
+            </div>
+        </div>
+        <div class="search"><i class="fa-solid fa-magnifying-glass fa-2x" onclick="searchOpen()"></i></div>
+        <div class="right-section flex-center">
+            <ul class="flex-center">
+                <li><a href="#" onmouseover="menuOn()" onmouseout="menuOff()">Online Degress <i class="fa-solid fa-chevron-down" id="down"></i><i class="fa-solid fa-chevron-up" id="up"></i></a>
+                    <div id="online-degrees" onmouseover="menuOn()" onmouseout="menuOff()">
+                        <div class="items">
+                            <h1>Online Degree</h1>
+                            <p>Explore Bachelor's and Mastar's Degrees</p>
+                        </div>
+                        <div class="items">
+                            <h1>MasterTrack &trade;</h1>
+                            <p>Earn Credit Towards A Master's Degree</p>
+                        </div>
+                        <div class="items">
+                            <h1>University Certificates</h1>
+                            <p>Advance your career with graduate level learning</p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Find your New Career</a></li>
+                <li><a href="#">For Enterprise</a></li>
+                <li><a href="#">For Universities</a></li>
+            </ul>
+            <div class="log-in flex-center">
+                <p>Log In</p>
+                <button class="btn">Join for Free</button>
+            </div>
+        </div>
+    </header>
+    
+    <section class="front flex-center">
+        <div class="text">
+            <h1>Learn Without Limits</h1>
+            <p>Start, switch, or advance your career with more than 5,000 courses, Professional Certificates, and degrees from world-class universities and companies.</p>
+            <div class="button flex-center">
+                <button class="btn1">Join for Free</button>
+                <button class="btn2">Try Coursera for Business</button>
+            </div>
+        </div>
+        <div class="image">
+            <img src="./images/Homepage-C-image.png" alt="">
+        </div>
+    </section>
+    <section class="collab flex-center">
+        <h1>We collaborate with <a href="">275+ leading universities and companies</a></h1>
+        <div class="image flex-center">
+            <img src="./images/Indian_Institute_of_Technology_Roorkee_logo.png" alt="">
+            <img src="./images/IIT_Bombay.png" alt="">
+            <img src="./images/1200px-IIM_Calcutta_Logo.svg.png" alt="">
+            <img src="./images/google.png" alt="">
+            <img src="./images/ISB_transparent_logo.png" alt="">
+            <img src="./images/stanford.png" alt="">
+            <img src="./images/meta.png" alt="">
+            <img src="./images/umich.png" alt="">
+            <img src="./images/1200px-Amazon_Web_Services_Logo.svg.png" alt="">
+            <img src="./images/1000px-IBM_logo.svg.png" alt="">
+        </div>
+    </section>
+    <section class="courses1">
+        <h1>Professional Certificates</h1>
+        <div class="text">
+            <h2>Get job-ready for an in-demand career</h2>
+            <p>Break into a new field like information technology or data science. No prior experience necessary to get started.</p>
+        </div>
+        
+        <div class="holder">
+            <button class="left" onclick="leftScroll1()"><i class="fa-solid fa-chevron-left fa-2x"></i></button>
+            <div class="scroller1 flex-center">
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/1200x600_PgM.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/Google-G_360x360.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">
+                                Google Project Management:
+                            </div>
+                            <div class="provider">
+                                Google
+                            </div>
+                            <div class="certificate">
+                                Professional Certificate
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/card2.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/META_logo.png" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">
+                                Meta Frontend Developer
+                            </div>
+                            <div class="provider">
+                                Meta
+                            </div>
+                            <div class="certificate">
+                                Professional Certificate
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/card3.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/IBM-Logo-Blk---Square.png" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">
+                                IBM Data Science
+                            </div>
+                            <div class="provider">
+                                IBM Skills Network
+                            </div>
+                            <div class="certificate">
+                                Professional Certificate
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/card4.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/Intuit_Square_360x360_WhiteonBlue.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">
+                                Intuit Academy Bookkeeping
+                            </div>
+                            <div class="provider">
+                                Intuit
+                            </div>
+                            <div class="certificate">
+                                Professional Certificate
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/card5.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/Google-G_360x360.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">
+                                Google Data Analytics
+                            </div>
+                            <div class="provider">
+                                Google
+                            </div>
+                            <div class="certificate">
+                                Professional Certificate
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/card6.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/META_logo.png" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">
+                                Meta Social Media Marketing
+                            </div>
+                            <div class="provider">
+                                Meta
+                            </div>
+                            <div class="certificate">
+                                Professional Certificate
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/card7.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/IBM-Logo-Blk---Square.png" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">
+                                IBM Cyber Security Analyst
+                            </div>
+                            <div class="provider">
+                                IBM
+                            </div>
+                            <div class="certificate">
+                                Professional Certificate
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/card8.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/Google-G_360x360.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">
+                                Google UX Design
+                            </div>
+                            <div class="provider">
+                                Google
+                            </div>
+                            <div class="certificate">
+                                Professional Certificate
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/card9.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/META_logo.png" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">
+                                Meta Backend Developer
+                            </div>
+                            <div class="provider">
+                                Meta
+                            </div>
+                            <div class="certificate">
+                                Professional Certificate
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="right" onclick="rightScroll1()"><i class="fa-solid fa-chevron-right fa-2x"></i></button>
+        </div>
+        <div class="explore-link">
+            <a href="#">Explore Certificates <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+    <section class="courses2">
+        <h1>Master's and Bachelor's Degrees</h1>
+        <div class="text">
+            <h2>Find a top degree that fits your life</h2>
+            <p>Breakthrough pricing on 100% online degrees from top universities.</p>
+        </div>
+        <div class="holder">
+            <button class="left" onclick="leftScroll2()"><i class="fa-solid fa-chevron-left fa-2x"></i></button>
+            <div class="scroller2 flex-center">
+                <div class="vessel">
+                    <div class="pack">
+                        <div class="banner">
+                            <img src="./images/banner1.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>Bachelor of Applied Arts & Science</h2>
+                            <p>from the University of North Texas</p>
+                        </div>
+                        <div class="bottom">
+                            <p>100% ONLINE</p>
+                            <img src="./images/bottom1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="vessel">
+                    <div class="pack">
+                        <div class="banner">
+                            <img src="./images/banner2.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>Bachelor of Science in Computer Science</h2>
+                            <p>from the University of London</p>
+                        </div>
+                        <div class="bottom">
+                            <p>100% ONLINE</p>
+                            <img src="./images/bottom2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="vessel">
+                    <div class="pack">
+                        <div class="banner">
+                            <img src="./images/banner3.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>Master of Computer and Information Technology</h2>
+                            <p>from Penn Engineering</p>
+                        </div>
+                        <div class="bottom">
+                            <p>100% ONLINE</p>
+                            <img src="./images/bottom3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="vessel">
+                    <div class="pack">
+                        <div class="banner">
+                            <img src="./images/banner4.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>Master of Computer Science in Data Science</h2>
+                            <p>from the University of Illinois at Urbana-Campaign</p>
+                        </div>
+                        <div class="bottom">
+                            <p>100% ONLINE</p>
+                            <img src="./images/bottom4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="vessel">
+                    <div class="pack">
+                        <div class="banner">
+                            <img src="./images/banner5.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>MBA in Business Analytics</h2>
+                            <p>from O.P. Jindal Global University</p>
+                        </div>
+                        <div class="bottom">
+                            <p>100% ONLINE</p>
+                            <img src="./images/bottom5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="vessel">
+                    <div class="pack">
+                        <div class="banner">
+                            <img src="./images/banner6.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>Master of Applied Data Science</h2>
+                            <p>from the University of Michigan</p>
+                        </div>
+                        <div class="bottom">
+                            <p>100% ONLINE</p>
+                            <img src="./images/bottom6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="vessel">
+                    <div class="pack">
+                        <div class="banner">
+                            <img src="./images/banner7.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>Master of Business Administration</h2>
+                            <p>from the University of Illinois at Urbana-Campaign</p>
+                        </div>
+                        <div class="bottom">
+                            <p>100% ONLINE</p>
+                            <img src="./images/bottom7.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="vessel">
+                    <div class="pack">
+                        <div class="banner">
+                            <img src="./images/banner8.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>M.A in Public Policy</h2>
+                            <p>from O.P. Jindal Global University</p>
+                        </div>
+                        <div class="bottom">
+                            <p>100% ONLINE</p>
+                            <img src="./images/bottom8.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="right" onclick="rightScroll2()"><i class="fa-solid fa-chevron-right fa-2x"></i></button>
+        </div>
+        <div class="explore-link">
+            <a href="#">Explore Certificates <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section> 
+    <section class="courses3">
+        <h1>MasterTrack Certificates</h1>
+        <div class="text">
+            <h2>Open new doors with graduate level learning</h2>
+            <p>Earn an university-issued certificate and credit towards a degree</p>
+        </div>
+        <div class="holder">
+            <button class="left" onclick="leftScroll3()"><i class="fa-solid fa-chevron-left fa-2x"></i></button>
+            <div class="scroller3 flex-center">
+                <div class="vessel">
+                    <div class="packt">
+                        <div class="banner">
+                            <img src="./images/banner9.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>UX Design MasterTrack&reg Certificate</h2>
+                            <p>from the University of Minnesota</p>
+                        </div>
+                        <div class="bottom">
+                            <p>Learn from Top Universities</p>
+                            <img src="./images/bottom9.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="vessel">
+                    <div class="packt">
+                        <div class="banner">
+                            <img src="./images/banner10.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>Cyber Security MasterTrack&reg Certificate</h2>
+                            <p>from Arizona State University</p>
+                        </div>
+                        <div class="bottom">
+                            <p>Learn from Top Universities</p>
+                            <img src="./images/bottom10.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="vessel">
+                    <div class="packt">
+                        <div class="banner">
+                            <img src="./images/banner11.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>AI & Machine Learning MasterTrack&reg Certificate</h2>
+                            <p>from Arizona State University</p>
+                        </div>
+                        <div class="bottom">
+                            <p>Learn from Top Universities</p>
+                            <img src="./images/bottom11.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="vessel">
+                    <div class="packt">
+                        <div class="banner">
+                            <img src="./images/banner12.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>Social Work MasterTrack&reg Certificate</h2>
+                            <p>from the University of Michigan</p>
+                        </div>
+                        <div class="bottom">
+                            <p>Learn from Top Universities</p>
+                            <img src="./images/bottom12.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="vessel">
+                    <div class="packt">
+                        <div class="banner">
+                            <img src="./images/banner13.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>Software Engineering MasterTrack&reg Certificate</h2>
+                            <p>from Arizona State University</p>
+                        </div>
+                        <div class="bottom">
+                            <p>Learn from Top Universities</p>
+                            <img src="./images/bottom13.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="vessel">
+                    <div class="packt">
+                        <div class="banner">
+                            <img src="./images/banner14.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>Business Essentials MasterTrack&reg Certificate</h2>
+                            <p>from I.E Business School</p>
+                        </div>
+                        <div class="bottom">
+                            <p>Learn from Top Universities</p>
+                            <img src="./images/bottom14.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="vessel">
+                    <div class="packt">
+                        <div class="banner">
+                            <img src="./images/banner15.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>Instructional Design MasterTrack&reg Certificate</h2>
+                            <p>from the University of Illinois at Urbana-Campaign</p>
+                        </div>
+                        <div class="bottom">
+                            <p>Learn from Top Universities</p>
+                            <img src="./images/bottom15.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="vessel">
+                    <div class="packt">
+                        <div class="banner">
+                            <img src="./images/banner16.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>Big Data MasterTrack&reg Certificate</h2>
+                            <p>from Arizona State University</p>
+                        </div>
+                        <div class="bottom">
+                            <p>Learn from Top Universities</p>
+                            <img src="./images/bottom16.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="right" onclick="rightScroll3()"><i class="fa-solid fa-chevron-right fa-2x"></i></button>
+        </div>
+        <div class="explore-link">
+            <a href="#">Explore MasterTrack Certificates <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+    <section class="courses4">
+        <h1>Courses and Specializations</h1>
+        <div class="text">
+            <h2>Courses You Can Complete in a Day</h2>
+            <p>Over 5,200 courses in topics like business analytics, graphic design, Python, and more.</p>
+        </div>
+        <div class="holder">
+            <button class="left" onclick="leftScroll4()"><i class="fa-solid fa-chevron-left fa-2x"></i></button>
+            <div class="scroller4 flex-center">
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/banner17.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/logo1.png" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">
+                                Google Project Management:
+                            </div>
+                            <div class="provider">
+                                Google
+                            </div>
+                            <div class="certificate">
+                                COURSE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/banner18.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/logo2.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">
+                                Meta Frontend Developer
+                            </div>
+                            <div class="provider">
+                                Meta
+                            </div>
+                            <div class="certificate">
+                                COURSE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/banner19.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/logo3.png" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">
+                                IBM Data Science
+                            </div>
+                            <div class="provider">
+                                IBM Skills Network
+                            </div>
+                            <div class="certificate">
+                                COURSE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/banner20.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/logo4.png" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">
+                                Intuit Academy Bookkeeping
+                            </div>
+                            <div class="provider">
+                                Intuit
+                            </div>
+                            <div class="certificate">
+                                COURSE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/banner21.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/logo5.png" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">
+                                Google Data Analytics
+                            </div>
+                            <div class="provider">
+                                Google
+                            </div>
+                            <div class="certificate">
+                                COURSE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/banner22.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/logo6.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">
+                                Meta Social Media Marketing
+                            </div>
+                            <div class="provider">
+                                Meta
+                            </div>
+                            <div class="certificate">
+                                COURSE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/banner23.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/logo7.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">
+                                IBM Cyber Security Analyst
+                            </div>
+                            <div class="provider">
+                                IBM
+                            </div>
+                            <div class="certificate">
+                                COURSE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/banner24.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/logo8.png" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="name">
+                                Google UX Design
+                            </div>
+                            <div class="provider">
+                                Google
+                            </div>
+                            <div class="certificate">
+                                COURSE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="right" onclick="rightScroll4()"><i class="fa-solid fa-chevron-right fa-2x"></i></button>
+        </div>
+        <div class="explore-link">
+            <a href="#">Explore Skills <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+    <section class="courses5">
+        <h1>100% Free</h1>
+        <div class="text">
+            <h2>Start Learning with Free Courses</h2>
+            <p>Free online courses from the world's top universities and companies.</p>
+        </div>
+        <div class="holder">
+            <button class="left" onclick="leftScroll5()"><i class="fa-solid fa-chevron-left fa-2x"></i></button>
+            <div class="scroller5 flex-center">
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/banner25.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/logo9.png" alt="">
+                        </div>
+                        <span class="free">
+                            Free
+                        </span>
+                        <div class="details">
+                            <div class="name">
+                                What is the Metaverse?
+                            </div>
+                            <div class="provider">
+                                Meta
+                            </div>
+                            <div class="certificate">
+                                COURSE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/banner26.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/logo10.jpg" alt="">
+                        </div>
+                        <span class="free">
+                            Free
+                        </span>
+                        <div class="details">
+                            <div class="name">
+                                The Science of Well-Being
+                            </div>
+                            <div class="provider">
+                                Yale University
+                            </div>
+                            <div class="certificate">
+                                COURSE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/banner27.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/logo11.png" alt="">
+                        </div>
+                        <span class="free">
+                            Free
+                        </span>
+                        <div class="details">
+                            <div class="name">
+                                Learning How to Learn
+                            </div>
+                            <div class="provider">
+                                Deap Teaching Solutions
+                            </div>
+                            <div class="certificate">
+                                COURSE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/banner28.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/logo12.png" alt="">
+                        </div>
+                        <span class="free">
+                            Free
+                        </span>
+                        <div class="details">
+                            <div class="name">
+                                English for Career Development
+                            </div>
+                            <div class="provider">
+                                University of Pennsylvania
+                            </div>
+                            <div class="certificate">
+                                COURSE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/banner29.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/logo13.jpg" alt="">
+                        </div>
+                        <span class="free">
+                            Free
+                        </span>
+                        <div class="details">
+                            <div class="name">
+                                Successful Negotiation
+                            </div>
+                            <div class="provider">
+                                University of Michigan
+                            </div>
+                            <div class="certificate">
+                                COURSE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/banner30.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/logo14.jpg" alt="">
+                        </div>
+                        <span class="free">
+                            Free
+                        </span>
+                        <div class="details">
+                            <div class="name">
+                                Fainancial Markets
+                            </div>
+                            <div class="provider">
+                                Yale University
+                            </div>
+                            <div class="certificate">
+                                COURSE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/banner31.jpg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/logo15.png" alt="">
+                        </div>
+                        <span class="free">
+                            Free
+                        </span>
+                        <div class="details">
+                            <div class="name">
+                                Chinese for Beginners
+                            </div>
+                            <div class="provider">
+                                Peking University
+                            </div>
+                            <div class="certificate">
+                                COURSE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="banner">
+                            <img src="./images/banner32.jpeg" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="./images/logo16.jpg" alt="">
+                        </div>
+                        <span class="free">
+                            Free
+                        </span>
+                        <div class="details">
+                            <div class="name">
+                                Intoduction to Psychology
+                            </div>
+                            <div class="provider">
+                                Yale University
+                            </div>
+                            <div class="certificate">
+                                COURSE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="right" onclick="rightScroll5()"><i class="fa-solid fa-chevron-right fa-2x"></i></button>
+        </div>
+        <div class="explore-link">
+            <a href="#">Explore Free Courses <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+    <section class="coursera">
+        <h1>Explore Coursera</h1>
+        <div class="grid">
+            <div class="strip">
+                <div class="image">
+                    <img src="./images/strip1.png" alt="">
+                </div>
+                <div class="type">
+                    <p>Business</p>
+                    <span>1095 courses</span>
+                </div>
+            </div>
+            <div class="strip">
+                <div class="image">
+                    <img src="./images/strip2.png" alt="">
+                </div>
+                <div class="type">
+                    <p>Computer Science</p>
+                    <span>668 courses</span>
+                </div>
+            </div>
+            <div class="strip">
+                <div class="image">
+                    <img src="./images/strip3.png" alt="">
+                </div>
+                <div class="type">
+                    <p>Health</p>
+                    <span>471 courses</span>
+                </div>
+            </div>
+            <div class="strip">
+                <div class="image">
+                    <img src="./images/strip4.png" alt="">
+                </div>
+                <div class="type">
+                    <p>Social Sciences</p>
+                    <span>401 courses</span>
+                </div>
+            </div>
+            <div class="strip">
+                <div class="image">
+                    <img src="./images/strip5.png" alt="">
+                </div>
+                <div class="type">
+                    <p>Personal Development</p>
+                    <span>137 courses</span>
+                </div>
+            </div>
+            <div class="strip">
+                <div class="image">
+                    <img src="./images/strip6.png" alt="">
+                </div>
+                <div class="type">
+                    <p>Arts & Humanities</p>
+                    <span>338 courses</span>
+                </div>
+            </div>
+            <div class="strip">
+                <div class="image">
+                    <img src="./images/strip7.png" alt="">
+                </div>
+                <div class="type">
+                    <p>Physical Science & Engineering</p>
+                    <span>413 courses</span>
+                </div>
+            </div>
+            <div class="strip">
+                <div class="image">
+                    <img src="./images/strip8.png" alt="">
+                </div>
+                <div class="type">
+                    <p>Language Learning</p>
+                    <span>150 courses</span>
+                </div>
+            </div>
+            <div class="strip">
+                <div class="image">
+                    <img src="./images/strip9.png" alt="">
+                </div>
+                <div class="type">
+                    <p>Information Technology</p>
+                    <span>145 courses</span>
+                </div>
+            </div>
+            <div class="strip">
+                <div class="image">
+                    <img src="./images/strip10.png" alt="">
+                </div>
+                <div class="type">
+                    <p>Data Science</p>
+                    <span>425 courses</span>
+                </div>
+            </div>
+            <div class="strip">
+                <div class="image">
+                    <img src="./images/strip11.png" alt="">
+                </div>
+                <div class="type">
+                    <p>Math & Logic</p>
+                    <span>70 courses</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="photo-block">
+        <img src="./images/outcomes.png" alt="">
+        <div class="text">
+            <h1>Learner outcomes on Cousera</h1>
+            <p><span>87% of people learning</span> for professional development <span>report career benefits</span>, including outcomes like getting a promotion, becoming better at their current job, and finding a new job. <a href="#">Coursera Impact Report (2020)</a></p>
+        </div>
+        <button class="btn">Join For Free</button>
+    </section>
+    <section class="community">
+        <h1>From the Coursera community</h1>
+        <p>113+ million people have already joined Coursera</p>
+        <div class="review">
+            <div class="student1">
+                <img src="./images/student1.png" alt="">
+                <h1 class="name">Chitranshee A.</h1>
+                <p class="place">India</p>
+                <div class="hr"></div>
+                <p>“Even more important than knowledge
+                    is confidence, which I have gained
+                    through my learning journey. No matter
+                    what you are looking to learn, or gain
+                    confidence in, Coursera has something
+                    for you.”</p>
+            </div>
+            <div class="student2">
+                <img src="./images/student2.png" alt="">
+                <h1 class="name">Carlos C.</h1>
+                <p class="place">United States</p>
+                <div class="hr"></div>
+                <p>“I was able to prove to potential employers that I have a solid understanding of computers and hardware—and started to receive real, viable job offers.”</p>
+            </div>
+            <div class="student3">
+                <img src="./images/student3.png" alt="">
+                <h1 class="name">Anisha R.</h1>
+                <p class="place">United States</p>
+                <div class="hr"></div>
+                <p>“I went from having no computer skills to being able to apply for a software engineering job at a serious company and pass their interviews, which were really rigorous. I have this career in front of me now that wasn’t even in sight before, and it’s what I want to be doing. That's really powerful.”</p>
+            </div>
+        </div>
+    </section>
+    <section class="business">
+        <div class="font">
+            <h1>Coursera for Business</h1>
+            <p>We've got the solution: world-class training and development programs developed by top universities and companies. All on Coursera for Business.</p>
+            <div class="buttons">
+                <button class="btn">Coursra for Enterprise</button>
+                <button class="btn">coursera for Teams</button>
+            </div>
+        </div>
+        <div class="logos">
+            <h2>Thousands of institutions use Coursera's enterprise offering.</h2>
+            <div class="imag1">
+                <img src="./images/loreal.svg" alt="">
+                <img src="./images/pandg.svg" alt="">
+                <img src="./images/novartis.svg" alt="">
+                <img src="./images/telenor.png" alt="">
+            </div>
+            <div class="imag2">
+                <img src="./images/airbus.svg" alt="">
+                <img src="./images/axisbank.svg" alt="">
+                <img src="./images/accelya.svg" alt="">
+                <img src="./images/tata.svg" alt="">
+                <img src="./images/axa.svg" alt="">
+            </div>
+            <div class="imag3">
+                <img src="./images/danone.png" alt="">
+                <img src="./images/sk.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="next-step">
+        <div class="photo">
+            <img src="./images/Image-Next-Step.png" alt="">
+        </div>
+        <div class="future">
+            <h2>Take the next step toward your personal and professional goals with Coursera.</h2>
+            <p>Join now to receive personalized recommendations from the full Coursera catalog.</p>
+            <button class="btn">Join for Free</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="section1">
+            <div class="box1">
+                <h1>Start or advance your career</h1>
+                <a href="#">Google Data Analyst</a>
+                <a href="#">Google Digital Marketing & E-commerce Professional Certificate</a>
+                <a href="#">Google IT Automation with Python Professional Certificate</a>
+                <a href="#">Google IT Support</a>
+                <a href="#">Google Project Management</a>
+                <a href="#">Google UX Design</a>
+                <a href="#">Preparing for Google Cloud Certification: Cloud Architect</a>
+                <a href="#">IBM Cybersecurity Analyst</a>
+                <a href="#">IBM Data Analyst</a>
+                <a href="#">IBM Data Engineering</a>
+                <a href="#">IBM Data Science</a>
+                <a href="#">IBM Full Stack Cloud Developer</a>
+                <a href="#">IBM Machine Learning</a>
+                <a href="#">Meta Front-End Developer</a>
+            </div>
+            <div class="box1">
+                <h1>Popular Courses and Certifications</h1>
+                <a href="">Free Courses</a>
+                <a href="">Artificial Intelligence Courses</a>
+                <a href="">Blockchain Courses</a>
+                <a href="">Computer Science Courses</a>
+                <a href="">Cursos Gratis</a>
+                <a href="">Cybersecurity Courses</a>
+                <a href="">Data Analysis Courses</a>
+                <a href="">Data Science Courses</a>
+                <a href="">English Speaking Courses</a>
+                <a href="">Full Stack Web Development Courses</a>
+                <a href="">Google Courses</a>
+                <a href="">Human Resources Courses</a>
+                <a href="">IT Courses</a>
+                <a href="">Learning English Courses</a>
+            </div>
+            <div class="box1">
+                <h1>Popular collections and articles</h1>
+                <a href="">Free online courses you can finish in a day</a>
+                <a href="">Popular Free Courses</a>
+                <a href="">Business Jobs</a>
+                <a href="">Cybersecurity Jobs</a>
+                <a href="">Entry-Level IT Jobs</a>
+                <a href="">Data Analyst Interview Questions</a>
+                <a href="">Data Analytics Projects</a>
+                <a href="">How to Become a Data Analyst</a>
+                <a href="">How to Become a Project Manager</a>
+                <a href="">IT Skills</a>
+                <a href="">Project Manager Interview Questions</a>
+                <a href="">Python Programming Skills</a>
+                <a href="">Strength and Weakness in Interview</a>
+                <a href="">What Does a Data Analyst Do</a>
+            </div>
+            <div class="box1">
+                <h1>Earn a degree or certificate online</h1>
+                <a href="">Google Professional Certificates</a>
+                <a href="">Professional Certificates</a>
+                <a href="">See all certificates</a>
+                <a href="">Bachelor's Degrees</a>
+                <a href="">Master's Degrees</a>
+                <a href="">Computer Science Degrees</a>
+                <a href="">Data Science Degrees</a>
+                <a href="">MBA & Business Degrees</a>
+                <a href="">Data Analytics Degrees</a>
+                <a href="">Public Health Degrees</a>
+                <a href="">Social Sciences Degrees</a>
+                <a href="">Management Degrees</a>
+                <a href="">BA vs BS Degree</a>
+                <a href="">What is a Bachelor's Degree?</a>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="box2">
+                <h1>Cousera</h1>
+                <a href="">About</a>
+                <a href="">What We Offer</a>
+                <a href="">Leadership</a>
+                <a href="">Careers</a>
+                <a href="">Catalog</a>
+                <a href="">Coursera Plus</a>
+                <a href="">Professional Certificates</a>
+                <a href="">MasterTrack® Certificates</a>
+                <a href="">Degrees</a>
+                <a href="">For Enterprise</a>
+                <a href="">For Government</a>
+            </div>
+            <div class="box2">
+                <h1>Community</h1>
+                <a href="">Learners</a>
+                <a href="">Partners</a>
+                <a href="">Developers</a>
+                <a href="">Beta Testers</a>
+                <a href="">Translators</a>
+                <a href="">Blog</a>
+                <a href="">Tech Blog</a>
+            </div>
+            <div class="box2">
+                <h1>More</h1>
+                <a href="">Press</a>
+                <a href="">Terms</a>
+                <a href="">Investors</a>
+                <a href="">Privacy</a>
+                <a href="">Help</a>
+                <a href="">Accessibility</a>
+                <a href="">Contact</a>
+                <a href="">Affiliates</a>
+            </div>
+            <div class="box3">
+                <img src="./images/download_on_the_app_store_badge_en.png" alt="">
+                <img src="./images/get in google play.png" alt="">
+                <img src="./images/B-Corp-Logo-Black-S.png" alt="">
+            </div>
+        </div>
+        <div class="small">
+            <div class="first">
+                <div class="box2">
+                    <h1>Cousera</h1>
+                    <a href="">About</a>
+                    <a href="">What We Offer</a>
+                    <a href="">Leadership</a>
+                    <a href="">Careers</a>
+                    <a href="">Catalog</a>
+                    <a href="">Coursera Plus</a>
+                    <a href="">Professional Certificates</a>
+                    <a href="">MasterTrack® Certificates</a>
+                    <a href="">Degrees</a>
+                    <a href="">For Enterprise</a>
+                    <a href="">For Government</a>
+                </div>
+                <div class="box2">
+                    <h1>Community</h1>
+                    <a href="">Learners</a>
+                    <a href="">Partners</a>
+                    <a href="">Developers</a>
+                    <a href="">Beta Testers</a>
+                    <a href="">Translators</a>
+                    <a href="">Blog</a>
+                    <a href="">Tech Blog</a>
+                </div>
+            </div>
+            <div class="second">
+                <div class="box2">
+                    <h1>More</h1>
+                    <a href="">Press</a>
+                    <a href="">Terms</a>
+                    <a href="">Investors</a>
+                    <a href="">Privacy</a>
+                    <a href="">Help</a>
+                    <a href="">Accessibility</a>
+                    <a href="">Contact</a>
+                    <a href="">Affiliates</a>
+                </div>
+            </div>
+            <div class="box3">
+                <h1>Learn Anywhere</h1>
+                <div class="bag">
+                    <img src="./images/download_on_the_app_store_badge_en.png" alt="">
+                    <img src="./images/get in google play.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="hr"></div>
+        <div class="copy">
+            <p>© 2022 Coursera Inc. All rights reserved.</p>
+            <div class="social">
+                <img src="./images/facebook.png" alt="">
+                <img src="./images/linkedin.png" alt="">
+                <img src="./images/twitter.png" alt="">
+                <img src="./images/youtube.png" alt="">
+                <img src="./images/instagram.png" alt="">
+            </div>
+        </div>
+    </footer>
+          
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
